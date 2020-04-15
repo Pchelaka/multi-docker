@@ -1,0 +1,12 @@
+username: postgres
+password: postgrespassword
+dbname: fibvalues
+
+
+{
+            "memoryReservation": 128,
+            "name": "client",
+            "image": "destination/multi-client",
+            "hostname": "client",
+            "essential": false
+        },
