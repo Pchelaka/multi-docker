@@ -1,18 +1,18 @@
 {
     "AWSEBDockerrunVersion": 2,
-    "containerDefinitions": [
-        {
-            "memoryReservation": 128,
-            "name": "client",
-            "image": "destination/multi-client",
-            "hostname": "client",
-            "essential": false
-        },
+    "containerDefinitions": [        
         {
             "memoryReservation": 128,
             "name": "server",
             "image": "destination/multi-server",
             "hostname": "api",
+            "essential": false
+        },
+        {
+            "memoryReservation": 128,
+            "name": "client",
+            "image": "destination/multi-client",
+            "hostname": "client",
             "essential": false
         },
         {
