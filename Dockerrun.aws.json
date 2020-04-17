@@ -13,6 +13,12 @@
             "name": "client",
             "image": "destination/multi-client",
             "hostname": "client",
+            "portMappings": [
+                {
+                "hostPort": 80,
+                "containerPort": 3000
+                }
+            ],
             "essential": false
         },
         {
@@ -28,12 +34,7 @@
             "image": "destination/multi-nginx",
             "hostname": "nginx",
             "essential": true,
-            "portMappings": [
-                {
-                "hostPort": 80,
-                "containerPort": 80
-                }
-            ],
+            
             "links": ["client", "server"]
         }
     ]
